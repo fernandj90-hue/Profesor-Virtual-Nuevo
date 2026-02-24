@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Configuración de OpenRouter
 # NOTA: En Render, configuraremos la API_KEY como variable de entorno por seguridad
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-MODEL_NAME = "google/gemini-2.0-flash-lite-preview-02-05:free" 
+MODEL_NAME = "google/gemini-2.0-flash-001" 
 
 @app.route("/", methods=["GET", "POST"])
 def home():
